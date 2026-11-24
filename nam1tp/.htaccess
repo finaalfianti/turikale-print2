@@ -1,8 +1,0 @@
-Options -Indexes +FollowSymLinks
-
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(uploads|assets)/(.*)$ asset.php?p=$1/$2 [QSA,L]
-</IfModule>
